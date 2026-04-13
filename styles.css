@@ -1,0 +1,61 @@
+.body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: cyan;
+    text-shadow: 0 0 5px magenta;
+}
+
+.button {
+    background-color: cyan;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: magenta;
+}
+
+.card {
+    background-color: #222222;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: 100%;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.luminous {
+    animation: pulse 1.5s infinite;
+}
+
+.footer {
+    background-color: #333333;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
